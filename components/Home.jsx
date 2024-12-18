@@ -9,7 +9,6 @@ export const  Home = () => {
   const fetchItems = async () => {
     setLoading(true);
     try {
-      // Replace 'your_table_name' with the actual name of your Supabase table
       const { data: items, error } = await supabase
         .from("reactNative")
         .select("*");
