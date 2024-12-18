@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { FlatList, Text, View } from "react-native";
-import supabase from "../supabase"; // Adjust based on your setup
-
+import supabase from '../supabase'
 export const  Home = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
